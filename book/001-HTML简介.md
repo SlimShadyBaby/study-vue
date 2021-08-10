@@ -27,9 +27,32 @@ style||
 link||
 meta||
 
+### 表格标签
+
+标签 | 用途 | 说明
+tr | 表示表格中的一行 |
+th | 表示表格中的表头 |
+td | 表示一个单元格 |
+caption | 表格的标题 |
+colspan | 单元格横跨的列数 |
+rowspan | 单元格横跨的行数 |
+thead | 组合html表格的表头内容 | \<thead\> 标签必须被用在以下情境中：作为 <table\> 元素的子元素，出现在 <caption\>、<colgroup\> 元素之后，<tbody\>、 <tfoot\> 和 <tr\> 元素之前。
+tbody | 组合html表格的主体内容 | \<tbody\> 标签必须被用在以下情境中：作为 \<table\> 元素的子元素，出现在 \<caption\>、\<colgroup\> 和 \<thead\> 元素之后。
+
 ## 分类
 
 按照标签的特性，可以分为**块级标签**和**行级标签（内联标签）**
 
 * **块级标签**特点是独占一行，如div,p,h1等
 * **行级标签**特点是不会自动换行，如span,a,img等
+
+## 表单元素
+
+1. input-text：文本输入框
+2. input-number: 数字框
+3. input-checkbox: 复选框
+4. input-radio: 单选框
+5. input-file: 文件上传框
+6. textarea: 文本输入框
+7. input-button: 普通按钮
+8. input-submit: 提交按钮
