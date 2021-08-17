@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .bg-color {
+            width: 200px;
+            height: 150px;
+            background-color: #ff00ff;
+            opacity: 0.8;
+        }
+        .bg-image {
+            width: 200px;
+            height: 200px;
+            background-image: url(../../images/firefox.png);
+        }
+        .bg-repeat {
+            width: 300px;
+            height: 200px;
+            border: 3px solid yellow;
+            background-repeat: repeat;
+            background-image: url(../../images/firefox.png);
+        }
+        .bg-attachment-scroll {
+            width: 300px;
+            height: 220px;
+            background-repeat: repeat;
+            background-image: url(../../images/firefox.png);
+            overflow: scroll;
+            background-attachment: scroll;
+        }
+        .bg-attachment-fixed {
+            width: 200px;
+            height: 150px;
+            background-repeat: repeat;
+            background-image: url(../../images/firefox.png);
+            overflow: scroll;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <h1>颜色示例</h1>
+    <h3 style="color: rgb(255, 255, 0);">rgb颜色</h3>
+    <h3 style="color: #ff00ff;">HEX颜色</h3>
+    <h3 style="color: lightgreen;">常用颜色</h3>
+
+    <hr>
+
+    <h1>边框示例</h1>
+    <div style="width: 200px; height: 150px; border: 5px solid red; border-radius: 15px; outline: 5px dashed blue;">
+        dotted - 定义点线边框<br />
+		dashed - 定义虚线边框<br />
+		solid - 定义实线边框<br />
+		double - 定义双边框<br />
+		......
+    </div>
+
+    <h1>背景示例</h1>
+    <div class="bg-color">bg-color</div>
+    <div class="bg-image">background-image</div>
+    <div class="bg-repeat">background-repeat</div>
+    <div class="bg-attachment-scroll">
+        background-attachment-scroll-background-attachment-scroll<br>
+        background-attachment-scroll-background-attachment-scroll<br>
+        background-attachment-scroll-background-attachment-scroll<br>
+        background-attachment-scroll-background-attachment-scroll<br>
+        background-attachment-scroll-background-attachment-scroll<br>
+        background-attachment-scroll-background-attachment-scroll<br>
+        background-attachment-scroll-background-attachment-scroll<br>
+        background-attachment-scroll-background-attachment-scroll<br>
+        background-attachment-scroll-background-attachment-scroll<br>
+        background-attachment-scroll-background-attachment-scroll<br>
+        background-attachment-scroll-background-attachment-scroll<br>
+        background-attachment-scroll-background-attachment-scroll<br>
+        background-attachment-scroll-background-attachment-scroll<br>
+    </div>
+</body>
+</html>
