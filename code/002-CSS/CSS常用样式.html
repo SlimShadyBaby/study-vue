@@ -48,6 +48,19 @@
             overflow: scroll;
             background-attachment: local;
         }
+        .bg-position {
+            width: 220px;
+            height: 220px;
+            border: 3px solid red;
+            background-image: url(../../images/firefox.png);
+            background-repeat: no-repeat;
+            background-position: bottom right;
+        }
+        .bg-short {
+            width: 300px;
+            height: 220px;
+            background: green url(../../images/firefox.png) no-repeat bottom right;
+        }
     </style>
 </head>
 <body>
@@ -55,7 +68,6 @@
     <h3 style="color: rgb(255, 255, 0);">rgb颜色</h3>
     <h3 style="color: #ff00ff;">HEX颜色</h3>
     <h3 style="color: lightgreen;">常用颜色</h3>
-
     <hr>
 
     <h1>边框示例</h1>
@@ -66,6 +78,7 @@
 		double - 定义双边框<br />
 		......
     </div>
+    <hr>
 
     <h1>背景示例</h1>
     <div class="bg-color">bg-color</div>
@@ -128,6 +141,28 @@
         <div style="width:500px">background-attachment-local</div>
         <div style="width:500px">background-attachment-local</div>
         <div style="width:500px">background-attachment-local</div>
+    </div>
+    <div class="bg-position">bg-position</div>
+    <div class="bg-short">background简写</div>
+    <hr>
+
+    <h1>位置</h1>
+    <div style="width:200px; height:200px; background-color:yellow;">
+        <span style="background-color:red">外层div</span>
+        <div style="background-color:green">static</div>
+        <div style="background-color:green; position:absolute; top:200px; left:100px;">absolute</div>
+        <div style="background-color:green; position:fixed; top:50px; left:50px;">fixed</div>
+        <div style="background-color:green; position:relative; top:70px;">relative</div>
+    </div>
+    <hr>
+
+    <h1>外边距与内边距</h1>
+    <div style="width:200px; height:200px; background-color:blueviolet;">
+        <span style="background-color:blue">外层div</span>
+        <div style="width:100px; height:100px; background-color:blue; border:3px solid red; margin: 10px; padding: 5px;">
+            <span style="background-color: yellow;">123</span>
+        </div>
+
     </div>
 </body>
 </html>
