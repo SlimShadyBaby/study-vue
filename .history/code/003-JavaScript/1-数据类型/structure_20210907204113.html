@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getTypeOf() {
+            document.getElementById("p").innerHTML=
+            "typeof \"string\" ------>" + typeof "string" + "<br>" +
+            "typeof boolean true ----->" + typeof true + "<br>" +
+            "typeof number 123455 ------>" + typeof 123455 + "<br>" +
+            "typeof NaN ------->" + typeof NaN + "<br>" +
+            "typeof [1,2,3,4]" + typeof [1,2,3,4] + "<br>" +
+            "typeof {name: 'jack'}" + typeof {name: "jack"} + "<br>" +
+            ""
+        }
+
+    </script>
+</head>
+<body>
+    <p id="p"></p>
+    <input type="button" value="click" onclick="getTypeOf();">
+</body>
+</html>

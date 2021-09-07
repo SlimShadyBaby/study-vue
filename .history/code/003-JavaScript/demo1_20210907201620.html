@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript">
+        function changeH2() {
+            document.getElementById("h2Content").innerHTML="<span style='color:yellow;'>h1</span>改变后的内容";
+            document.getElementById("h2Content2").innerText="<span style='color;yellow;'>h1</span>changed";
+        }
+
+        function changeH3() {
+            document.getElementById("h3Content").style.color="blue";
+            document.getElementById("h3Content").style.fontSize="30px";
+        }
+
+        function validateData() {
+            var result = true;
+            var name = document.getElementById("textName").value.trim();
+            debugger;
+            if (name == "") {
+                result = false;
+            }
+            if (result == false) {
+                alert("input shouldn't be empty")
+            }
+            return result;
+        }
+    </script>
+    <script type="text/javascript" src="demo1.js"></script>
+</head>
+<body>
+    <h1>Demo1</h1>
+    <h2 id="h2Content">
+        h2 默认内容
+        <span>我是子内容</span>
+    </h2>
+    <h2 id="h2Content2">
+        h2 h2Content2
+        <span>I'm content2</span>
+    </h2>
+    <input type="button" value="changeH2" onclick="changeH2();">
+
+    <h3 id="h3Content">
+        h3Content
+        <span>content3</span>
+    </h3>
+    <input type="button" value="changeH3" onclick="changeH3();">
+
+    <form action="api/employee/save" method="POST" onsubmit="return validateData()">
+        name:<input type="text" id="textName">
+        <br>
+        <input type="submit" value="submit">
+    </form>
+
+    <h1>调用外部js方法</h1>
+    <input type="button" value="调用外部方法" onclick="outCode();">
+</body>
+</html>
